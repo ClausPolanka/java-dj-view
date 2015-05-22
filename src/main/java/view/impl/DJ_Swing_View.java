@@ -83,22 +83,22 @@ public class DJ_Swing_View implements Beat_Observer, Beats_Per_Minute_Observer, 
     }
 
     @Override
-    public void enableStopMenuItem() {
+    public void enable_stop_menu_item() {
         stop_menu_item.setEnabled(true);
     }
 
     @Override
-    public void disableStopMenuItem() {
+    public void disable_stop_menu_item() {
         stop_menu_item.setEnabled(false);
     }
 
     @Override
-    public void enableStartMenuItem() {
+    public void enable_start_menu_item() {
         start_menu_item.setEnabled(true);
     }
 
     @Override
-    public void disableStartMenuItem() {
+    public void disable_start_menu_item() {
         start_menu_item.setEnabled(false);
     }
 

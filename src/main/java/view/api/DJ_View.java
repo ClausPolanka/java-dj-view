@@ -1,11 +1,11 @@
 package view.api;
 
 public interface DJ_View {
-    void enableStopMenuItem();
+    void enable_stop_menu_item();
 
-    void disableStopMenuItem();
+    void disable_stop_menu_item();
 
-    void enableStartMenuItem();
+    void enable_start_menu_item();
 
-    void disableStartMenuItem();
+    void disable_start_menu_item();
 }
