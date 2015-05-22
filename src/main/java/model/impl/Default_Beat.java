@@ -1,8 +1,8 @@
 package model.impl;
 
 import model.api.Beat;
-import model.shared.Beat_Observer;
-import model.shared.Beats_Per_Minute_Observer;
+import model.api.Beat_Observer;
+import model.api.Beats_Per_Minute_Observer;
 
 import javax.sound.midi.MetaEventListener;
 import javax.sound.midi.MetaMessage;
@@ -13,7 +13,7 @@ import java.util.List;
 public class Default_Beat implements Beat, MetaEventListener {
 
     public static final int DEFAULT_BEATS_PER_MINUTE = 90;
-    
+
     Sequencer sequencer;
     List<Beat_Observer> beat_observers = new ArrayList<>();
     List<Beats_Per_Minute_Observer> beats_per_minute_observers = new ArrayList<>();

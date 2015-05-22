@@ -1,8 +1,5 @@
 package model.api;
 
-import model.shared.Beat_Observer;
-import model.shared.Beats_Per_Minute_Observer;
-
 public interface Beat {
     void initialize();
     void on();
