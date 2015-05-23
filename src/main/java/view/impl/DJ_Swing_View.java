@@ -10,7 +10,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class DJ_Swing_View implements Beat_Observer, Beats_Per_Minute_Observer, ActionListener, view.api.DJ_View {
+public class DJ_Swing_View implements Beat_Observer, Beats_Per_Minute_Observer, ActionListener {
 
     Controller controller;
     Beat model;
@@ -82,22 +82,18 @@ public class DJ_Swing_View implements Beat_Observer, Beats_Per_Minute_Observer, 
         }
     }
 
-    @Override
     public void enable_stop_menu_item() {
         stop_menu_item.setEnabled(true);
     }
 
-    @Override
     public void disable_stop_menu_item() {
         stop_menu_item.setEnabled(false);
     }
 
-    @Override
     public void enable_start_menu_item() {
         start_menu_item.setEnabled(true);
     }
 
-    @Override
     public void disable_start_menu_item() {
         start_menu_item.setEnabled(false);
     }
