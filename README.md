@@ -18,7 +18,7 @@ This project shows an example of how to implement the MVC pattern with Java Swin
 
 Der Controller ist eine Strategie (Strategy-Pattern) des Views.
 
-- [ ] Insert diagram.
+![Controller](/img/controller.png "Controller")
 
 Er ist zum einen dafür verantwortlich, wann welche Controls (z.B.: Buttons) aktiviert oder deaktiviert werden. Außerdem werden alle im View ausgelösten Aktionen (z.B.: Button-Klicks) an den Controller weiter delegiert. Der Controller führt dann die entsprechenden  Änderungen des Models (z.B.: Zustandsänderungen) durch. Sobald sich der Zustand ändert, kann das Model seine Beobachter darüber benachrichtigen. Eine Methode im Beispiel des Buchs, das beide Aufgaben zeigt ist folgende. Im View gibt es ein Menü mit dem Eintrag Start. Sobald darauf geklickt wird, wird diese start()-Methode des Controller ausgeführt.
 
