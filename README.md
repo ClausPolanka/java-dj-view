@@ -9,8 +9,13 @@ This project shows an example of how to implement the MVC pattern with Java Swin
 - [ ] Document experiences into seperate section of this file.
 
 ## Short summary about MVC
+- [ ] TODO
 ### Controller
+- [ ] TODO
 ### View
+- [ ] TODO
 ### Model
+- [ ] TODO
 
 ## Experiences and Open Questions
+- [ ] TODO
