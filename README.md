@@ -4,3 +4,4 @@ This project shows an example of how to implement the MVC pattern with Java Swin
 ## To Dos
 - [ ] Make implicit controller's view dependency explicit.
 - [ ] Add JavaFX view and use existing controller and model.
+- [ ] Write Unit-Tests for controllers and models.
