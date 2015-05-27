@@ -26,7 +26,14 @@ Er ist zum einen dafür verantwortlich, wann welche Controls (z.B.: Buttons) akt
 
 ### View
 
-- [ ] TODO
+- [ ] Translate into english.
+
+Der View registriert sich als Beobachter (Observer-Pattern) beim Model. Dafür hat der View eine Abhängigkeit auf das Interface des Models, welches die Methoden zum Registrieren und Deregistrieren anbietet. Der View implementiert diejenigen Observer-Typen als die er sich beim Model registrieren möchte. Der View hat ausschließlich die Aufgabe des Layouts und darüber wie sich seine Controls zusammenbauen lassen. Alles andere, wird vom Controller übernommen.
+
+- [ ] Insert diagram.
+
+Die Registrierung wird im Beispiel des Buchs in der UI Klasse in dessen Konstruktor vorgenommen. Dabei wird im Konstruktor neben dem Controller auch noch das Model Interface als explizite Abhängigkeit deklariert. Das Observer Interface kann nach den Model-Properties, über die das UI bezüglich Änderungen vom Model notifiziert werden möchte, benannt werden. Sobald sich das entsprechende Model-Property im Model ändert, wird die notify() Methode vom Model aufgerufen, und das UI somit darüber informiert. Dieses kann nun seine Controls entsprechend anpassen.
+
 
 ### Model
 
