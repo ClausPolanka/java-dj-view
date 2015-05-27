@@ -7,3 +7,10 @@ This project shows an example of how to implement the MVC pattern with Java Swin
 - [ ] Write Unit-Tests for controllers and models.
 - [ ] Try to combine observers into one observer passing wanted information by args.
 - [ ] Document experiences into seperate section of this file.
+
+## Short summary about MVC
+### Controller
+### View
+### Model
+
+## Experiences and Open Questions
