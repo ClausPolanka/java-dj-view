@@ -54,4 +54,18 @@ Dadurch kann der bestehende View für das neue Model wiederverwendet werden. Der
 
 ## Experiences and Open Questions
 
-- [ ] TODO
+- [ ] Im Buch registriert sich der View im eigenen Konstruktor beim Model als Beobachter. Dadurch braucht der View eine Abhängigkeit auf das Model. Um keine Direkte Abhängigkeit vom View auf das Model zu haben, entkoppelt man das durch ein Model-Interface. Könnte man das nicht eigentlich im Composition Root machen und somit die Abhängigkeit entfernen? 
+
+- [ ] Insert pic
+
+- [ ] Der View registriert sich als Observer beim Model und muss daher die entsprechenden Observer-Interfaces implementieren. Diese bestehen nur aus Methoden, die keine Argumente besitzen. Somit benötigt der View eine Abhängigkeit auf das Model um Zugriff auf die Zustandsänderungen des Models zu erhalten. Zwar ist die Notifizierung von Zuständsänerungen durch das Observerpattern entkoppelt, jedoch wird erneut das Model-Interface benötigt. Könnte man nicht einfach die neuen Zustände als Argumente der Observer-Methoden mitgeben? Dadurch würde der View die Abhängigkeit auf das Model-Interface nicht mehr benötigen.
+
+- [ ] Insert pic 
+
+Im Controller eine fixe Abhängigkeit auf den View und nicht auf z.B.: ein View-Interface deklariert. Somit sind der Controller und der View sehr stark gekoppelt. Die Instanziierung des Views findet im Konstruktor des Controllers statt, wobei der Controller sich selbst als Abhängigkeit (jedoch entkoppelt über ein Interface) dem View übergibt. Könnte das nicht wiederum zum einen über ein View-Interface entkoppelt werden, damit man z.B.: statt dem Swing eine JavaFX Kompenete daraus machen könnte. Außerdem könnte die Instanziierung doch im Composition-Root stattfinden. Dadurch würde der Controller testbar werden, was er zur Zeit nicht wäre.
+
+- [ ] Insert pic
+
+- [ ] Könnte die Erzeugung der Views und Controls nicht beim Instanziieren direkt erfolgen. Dann bräuchte man diese beiden public Methode nicht mehr.
+
+- [ ] Insert pic
